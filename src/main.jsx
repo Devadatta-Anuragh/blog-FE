@@ -6,8 +6,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import BlogPosts from "./components/BlogPosts.jsx";
 import BlogPostPage from "./components/BlogPostPage.jsx";
 import SearchResult from "./components/SearchResult.jsx";
-import Finance from "./components/Finance.jsx";
-import Health from "./components/Health.jsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { AuthProvider } from "./components/AuthProvider.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
@@ -39,14 +37,6 @@ const router = createBrowserRouter([
       {
         path: "create",
         element: <Create />,
-      },
-      {
-        path: "finance",
-        element: <Finance />,
-      },
-      {
-        path: "health",
-        element: <Health />,
       },
     ],
   },
